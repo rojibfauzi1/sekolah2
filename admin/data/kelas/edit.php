@@ -22,7 +22,7 @@ if(isset($_POST['edit'])){
 
 
 $s = "UPDATE kelas SET kd_kelas='$id',nama_kelas='$nama',tingkat='$tingkat',
-  jurusan='$jurusan'";
+  kd_jurusan='$jurusan'";
   $s .= " WHERE kd_kelas='$id'";
   $sql = $conn->query($s);
   if($sql){

@@ -22,7 +22,7 @@
     
 	<?php
 	$no = 1;
-	$sql = "SELECT kd_gurumapel,guru.nama_guru,mapel.mapel,keterangan FROM gurumapel
+	$sql = "SELECT * FROM gurumapel
   			join guru on gurumapel.kd_guru=guru.kd_guru
   			join mapel on gurumapel.kd_mapel=mapel.kd_mapel";
 	$s = $conn->query($sql);

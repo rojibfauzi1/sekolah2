@@ -21,7 +21,7 @@
     
 	<?php
 	$no = 1;
-	$sql = "SELECT kd_berita,judul,kategoriberita.jenis_berita FROM berita
+	$sql = "SELECT * FROM berita
   join kategoriberita on berita.kd_kategoriberita=kategoriberita.kd_kategoriberita";
 	$s = $conn->query($sql);
 	while($row=$s->fetch_assoc()){

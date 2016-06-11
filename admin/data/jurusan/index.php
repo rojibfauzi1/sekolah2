@@ -21,7 +21,7 @@
     
 	<?php
 	$no = 1;
-	$sql = "SELECT nama_jurusan,keterangan FROM jurusan";
+	$sql = "SELECT * FROM jurusan";
 	$s = $conn->query($sql);
 	while($row=$s->fetch_assoc()){
 	?>

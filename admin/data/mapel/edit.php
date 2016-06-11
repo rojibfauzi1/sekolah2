@@ -21,7 +21,7 @@ if(isset($_POST['edit'])){
   $jurusan = $_POST['jurusan'];
 
 
-$s = "UPDATE mapel SET kd_mapel='$id',mapel='$nama',jurusan='$jurusan'";
+$s = "UPDATE mapel SET kd_mapel='$id',mapel='$nama',kd_jurusan='$jurusan'";
   $s .= " WHERE kd_mapel='$id'";
   $sql = $conn->query($s);
   if($sql){
@@ -37,10 +37,10 @@ $s = "UPDATE mapel SET kd_mapel='$id',mapel='$nama',jurusan='$jurusan'";
 <div class="judul">
 	<h2>Edit Mata Pelajaran</h2>
 </div>
-<form method="post" enctype="multipart/form-data" class="col-md-8" action="?p=editmapel">
+<form method="post" enctype="multipart/form-data" class="col-md-8" action="">
   <div class="form-group">
     <label for="id">ID</label>
-    <input type="text" required name="id" class="form-control" readOnly value="<?php echo $row['kd_kelas']; ?>">
+    <input type="text" required name="id" class="form-control" readOnly value="<?php echo $row['kd_mapel']; ?>">
   </div>
   <div class="form-group">
     <label for="nama">Nama Mata Pelajaran</label>

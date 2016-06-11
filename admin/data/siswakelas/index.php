@@ -23,7 +23,7 @@
     
 	<?php
 	$no = 1;
-	$sql = "SELECT kd_siswakelas,siswa.nama_siswa,guru.nama_guru,tahun.tahun,kelas.nama_kelas FROM siswakelas
+	$sql = "SELECT * FROM siswakelas
   			join siswa on siswakelas.kd_siswa=siswa.kd_siswa
   			join wali on siswakelas.kd_wali=wali.kd_wali
   			join guru on guru.kd_guru=wali.kd_guru

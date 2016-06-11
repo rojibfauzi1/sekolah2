@@ -21,7 +21,7 @@
     
 	<?php
 	$no = 1;
-	$sql = "SELECT mapel.mapel,jurusan.nama_jurusan FROM mapel
+	$sql = "SELECT * FROM mapel
   join jurusan on mapel.kd_jurusan=jurusan.kd_jurusan";
 	$s = $conn->query($sql);
 	while($row=$s->fetch_assoc()){

@@ -22,7 +22,7 @@
     
 	<?php
 	$no = 1;
-	$sql = "SELECT kd_wali,guru.nama_guru,tahun.tahun,kelas.nama_kelas FROM guru
+	$sql = "SELECT * FROM guru
   			join wali on guru.kd_guru=wali.kd_guru
   			join tahun on tahun.kd_tahun=wali.kd_tahun
   			join kelas on kelas.kd_kelas=wali.kd_kelas";

@@ -22,7 +22,7 @@
     
 	<?php
 	$no = 1;
-	$sql = "SELECT kelas.nama_kelas,kelas.tingkat,jurusan.nama_jurusan FROM kelas
+	$sql = "SELECT * FROM kelas
   join jurusan on kelas.kd_jurusan=jurusan.kd_jurusan";
 	$s = $conn->query($sql);
 	while($row=$s->fetch_assoc()){
