@@ -97,13 +97,13 @@ if($login != '1'){
             <li><a href="?p=kategoriberita"><i class="fa fa-circle-o"></i>Kategori Berita</a></li>
           </ul>
         </li>
-        <li class="treeview">
+     <!--    <li class="treeview">
           <a href="?p=gallery">
             <i class="fa fa-edit"></i> <span>Galeri</span>
        
           </a>
           
-        </li>
+        </li> -->
         
         
      
@@ -111,7 +111,7 @@ if($login != '1'){
         
        
         <li class="header">LABELS</li>
-        <li><a href="?p=kritiksaran"><i class="fa fa-circle-o text-red"></i> <span>Kritik Saran</span></a></li>
+        
         <li><a href="logout.php"><i class="fa fa-circle-o text-yellow"></i> <span>Logout</span></a></li>
        
       </ul>
