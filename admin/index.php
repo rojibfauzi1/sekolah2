@@ -56,6 +56,7 @@ if($login != '1'){
           <ul class="treeview-menu">
             <li class="active"><a href="?p=dasboard_admin"><i class="fa fa-circle-o"></i> Dashboard</a></li>
             <li><a href="?p=admin"><i class="fa fa-circle-o"></i> Admin</a></li>
+       
           </ul>
         </li>
       
@@ -69,6 +70,17 @@ if($login != '1'){
             <li><a href="?p=profil"><i class="fa fa-circle-o"></i> Profil</a></li>
             <li><a href="?p=paket_wisata"><i class="fa fa-circle-o"></i> Paket Wisata</a></li>
             
+            <li><a href="?p=siswa"><i class="fa fa-circle-o"></i>Siswa</a></li>
+            <li><a href="?p=kelas"><i class="fa fa-circle-o"></i>Kelas</a></li>
+            <li><a href="?p=mapel"><i class="fa fa-circle-o"></i>Mata Pelajaran</a></li>
+            <li><a href="?p=jurusan"><i class="fa fa-circle-o"></i>Jurusan</a></li>
+            <li><a href="?p=tahun"><i class="fa fa-circle-o"></i>Tahun</a></li>
+            <li><a href="?p=wali"><i class="fa fa-circle-o"></i>Wali</a></li>
+            <li><a href="?p=guru"><i class="fa fa-circle-o"></i>Guru</a></li>
+            <li><a href="?p=gurumapel"><i class="fa fa-circle-o"></i>Guru Mapel</a></li>
+            <li><a href="?p=siswakelas"><i class="fa fa-circle-o"></i>Siswa Kelas</a></li>
+            <li><a href="?p=kategorinilai"><i class="fa fa-circle-o"></i>Kategori Nilai</a></li>
+            
           </ul>
         </li>
         <li class="treeview">
@@ -80,7 +92,9 @@ if($login != '1'){
           <ul class="treeview-menu">
             <li><a href="?p=kategori"><i class="fa fa-circle-o"></i> Kategori Berita</a></li>
             <li><a href="?p=berita"><i class="fa fa-circle-o"></i> Berita</a></li>
-            
+            <li><a href="?p=profil"><i class="fa fa-circle-o"></i>Profil</a></li>
+            <li><a href="?p=berita"><i class="fa fa-circle-o"></i>Berita</a></li>
+            <li><a href="?p=kategoriberita"><i class="fa fa-circle-o"></i>Kategori Berita</a></li>
           </ul>
         </li>
         <li class="treeview">
