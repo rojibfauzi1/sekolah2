@@ -1,0 +1,19 @@
+
+ul li a:hover{
+	text-decoration: none;
+}
+.fl_left ul li{
+	background-color: #2D3134;
+	margin: 0;	
+}
+.fl_left ul li a{
+	background-color: #2D3134;
+	
+	text-decoration: none;
+	border-bottom: 1px solid #eee;
+	
+}
+.fl_left ul li a:hover{
+	background-color: #01AAEC;
+	color: #eee;
+}
