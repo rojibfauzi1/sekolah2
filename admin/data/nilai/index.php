@@ -39,8 +39,8 @@
 	  <td><?php echo $row['nilai'] ?></td>
 	  
 	  <td>
-	  	<a class="btn btn-danger" href="?p=hapusnilai&id=<?php echo $row['kd_nilai'] ?>" onclick="return confirm('Anda yakin ingin mengahpus ini ?')">Hapus</a>
-	  	<a class="btn btn-warning" href="?p=editnilai&id=<?php echo $row['kd_nilai'] ?>">Edit</a>
+	  	<a class="btn btn-danger" href="?p=hapusnilai&id=<?php echo $row['kd_nilai']; ?>" onclick="return confirm('Anda yakin ingin mengahpus ini ?')">Hapus</a>
+	  	<a class="btn btn-warning" href="?p=editnilai&id=<?php echo $row['kd_nilai']; ?>">Edit</a>
 	  </td>
 	</tr>
 	<?php $no++; } ?>
