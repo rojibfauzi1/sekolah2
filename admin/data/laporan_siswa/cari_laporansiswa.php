@@ -41,7 +41,7 @@ include '../conf/koneksi.php';
 
 ?>
 
-<form method="post" enctype="multipart/form-data" class="col-md-8" action="?p=tambahList">
+<form method="post" enctype="multipart/form-data" class="col-md-8" action="">
  
 <div class="well">
   <div class="form-group">

@@ -118,6 +118,9 @@ if($login != '3'){
           case 'cari_nilai':
               $page = 'nilai_siswa/cari_nilai.php';
             break;
+          case 'cetak':
+              $page = 'nilai_siswa/cetak.php';
+            break;
           case 'editnilai_siswa':
               $page = 'nilai_siswa/edit.php';
             break;
