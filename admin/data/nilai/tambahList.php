@@ -84,7 +84,7 @@ ECHO '<tr>
   }
   ?>
 </table>
-
+<!-- pindah -->
 <?php
 /*function tampil_guru(){
 include '../conf/koneksi.php';
