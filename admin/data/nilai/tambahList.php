@@ -64,7 +64,7 @@ $maxId = $conn->query("SELECT MAX(kd_nilai) AS max_id FROM nilai");
 
       
 ECHO '<tr>
-      
+        <input type="text" name="guru" value="'. $data['kd_gurumapel'] .'" />
       <td>'.$no.'</td>
       <td><input type="text"  readOnly value="'.$data['nama_siswa'].'"/></td>
       
@@ -117,7 +117,7 @@ include '../conf/koneksi.php';
       
     
       
-      <input type="hidden" name="guru" value="<?php echo $kd_gurumapel ?>" />
+    
       <label for="nama">Kategori</label><br/>
       <select name="kategorinilai" class="form-control">
         <?php tampil_kategori(); ?>

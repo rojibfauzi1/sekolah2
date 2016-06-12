@@ -4,10 +4,10 @@ include '../conf/koneksi.php';
 
 
 
-$s = "DELETE FROM wali WHERE kd_wali='$_GET[id]'";
+$s = "DELETE FROM nilai WHERE kd_nilai='$_GET[id]'";
 $sql = $conn->query($s);
 if($sql){
 	
-	header("location: ?p=wali");
+	header("location: ?p=nilai");
 }
 ?>

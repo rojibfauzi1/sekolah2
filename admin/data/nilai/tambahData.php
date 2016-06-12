@@ -130,9 +130,9 @@ die();*/
 
    $sql = "INSERT INTO nilai (kd_siswa,kd_kategorinilai,kd_gurumapel,semester,nilai) VALUES ('$siswa','$kategori','$gurumapel','$semester','$id')";
    $s = $conn->query($sql);
-print_r($sql);
+/*print_r($sql);
 die();
-
+*/
   }
   /*echo "<script>window.location='?p=siswakelas'</script>";*/
 }
