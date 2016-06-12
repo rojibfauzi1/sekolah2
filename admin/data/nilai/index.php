@@ -27,7 +27,8 @@
   			join gurumapel on gurumapel.kd_gurumapel=nilai.kd_gurumapel
   			join mapel on gurumapel.kd_mapel=mapel.kd_mapel
   			join siswa on nilai.kd_siswa=siswa.kd_siswa
-  			join kategorinilai on nilai.kd_kategorinilai=kategorinilai.kd_kategorinilai";
+  			join guru on gurumapel.kd_guru=guru.kd_guru
+  			join kategorinilai on nilai.kd_kategorinilai=kategorinilai.kd_kategorinilai where guru.nama_guru='$guru'";
 	$s = $conn->query($sql);
 	while($row=$s->fetch_assoc()){
 	?>

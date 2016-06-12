@@ -34,9 +34,10 @@ $sql = $conn->query("select * from gurumapel
    join siswa on siswakelas.kd_siswa=siswa.kd_siswa
   join tahun on gurumapel.kd_tahun=tahun.kd_tahun
     join mapel on gurumapel.kd_mapel=mapel.kd_mapel
+    join guru on gurumapel.kd_guru=guru.kd_guru
   
 
-   where kelas.kd_kelas = '$kd_kelas' and tahun.kd_tahun='$kd_tahun' and mapel.kd_mapel='$kd_mapel'");
+   where guru.nama_guru='$guru' and kelas.kd_kelas = '$kd_kelas' and tahun.kd_tahun='$kd_tahun' and mapel.kd_mapel='$kd_mapel'");
   $no = 0;
 $maxId = $conn->query("SELECT MAX(kd_nilai) AS max_id FROM nilai");
         
@@ -64,12 +65,13 @@ $maxId = $conn->query("SELECT MAX(kd_nilai) AS max_id FROM nilai");
 
       
 ECHO '<tr>
-        <input type="text" name="guru" value="'. $data['kd_gurumapel'] .'" />
+<input type="hidden" name="id" value="'. $idBaru .'" />
+        <input type="hidden" name="guru" value="'. $data['kd_gurumapel'] .'" />
       <td>'.$no.'</td>
       <td><input type="text"  readOnly value="'.$data['nama_siswa'].'"/></td>
       
       <input type="hidden" name="siswa" readOnly value="'.$data['kd_siswa'].'"/>
-      <input type="hidden" name="id" value="'.$data['kd_siswa'].'"</td>   
+      
 
       <td align="center" >
         ';

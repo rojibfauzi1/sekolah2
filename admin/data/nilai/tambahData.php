@@ -124,15 +124,15 @@ die();*/
 
   $jum = count($_POST['pilih']);
 
-  foreach($_POST['pilih'] as $key => $id){
+  foreach($_POST['pilih'] as $key => $nilai){
 
 
 
-   $sql = "INSERT INTO nilai (kd_siswa,kd_kategorinilai,kd_gurumapel,semester,nilai) VALUES ('$siswa','$kategori','$gurumapel','$semester','$id')";
+   $sql = "INSERT INTO nilai (kd_nilai,kd_siswa,kd_kategorinilai,kd_gurumapel,semester,nilai) VALUES ('$id','$siswa','$kategori','$gurumapel','$semester','$nilai')";
    $s = $conn->query($sql);
 /*print_r($sql);
-die();
-*/
+die();*/
+
   }
   /*echo "<script>window.location='?p=siswakelas'</script>";*/
 }
