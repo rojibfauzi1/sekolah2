@@ -72,6 +72,8 @@ include '../conf/koneksi.php';
 </form>
 <div class="clear" style="clear:both;"></div>
 <br/><br/>
+<a href="?p=cetak" class="btn btn-primary">Cetak</a>
+<br/><br/>
 <table class="table table-striped">
 	<thead>
     
