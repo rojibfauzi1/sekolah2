@@ -35,7 +35,10 @@ include '../conf/koneksi.php';
 }
 function tampil_mapel(){
 include '../conf/koneksi.php';
-  $sql = "SELECT * FROM mapel";
+  $sql = "SELECT * FROM gurumapel 
+   join mapel on mapel.kd_mapel=gurumapel.kd_mapel
+   join guru on gurumapel.kd_guru=guru.kd_guru
+   where guru.nama_guru = '$_SESSION[nama_guru]'";
   $s = $conn->query($sql);
   while($row = $s->fetch_assoc()){
     echo "<option value='".$row['kd_mapel']."'>".$row['mapel']."</option>";
@@ -72,7 +75,7 @@ include '../conf/koneksi.php';
         <option value="ganjil">Ganjil</option>
       </select><br/> -->
       <label for="nama">Mata Pelajaran</label><br/>
-      <select name="mapel" class="form-control" id="tahun_ajax">
+      <select name="mapel" class="form-control" id="tahun_ajax" required>
         <?php tampil_mapel(); ?>
       </select><br/>
       <!-- <label for="nama">Kategori Nilai</label><br/>
