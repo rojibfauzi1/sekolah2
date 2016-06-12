@@ -25,4 +25,19 @@ include 'conf/koneksi.php';
         </li>
         <?php } ?>
       </ul>
+
+      <ul style="margin-top:100px">
+      <h3 style="margin-top:10px; ">Kategori</h3>
+        <?php
+        $sql = "SELECT * FROM kategoriberita ";
+        $s = $conn->query($sql);
+        foreach($s as $data){
+        ?>
+        <li >
+          
+          <p><strong><a href="detail_kategori.php?kategori=<?php echo $data['kd_kategoriberita'] ?>"><?php echo $data['jenis_berita']; ?></a></strong></p>
+          
+        </li>
+        <?php } ?>
+      </ul>
     </div>

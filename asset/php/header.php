@@ -8,7 +8,7 @@
     </div>
     <div id="topnav">
       <ul  class="dropmenu">
-        <li ><a href="../sekolah/index.php">Home</a></li>
+        <li ><a href="../sekolah2/index.php">Home</a></li>
          <li><a href="#">Profil</a>
            <ul style="z-index:9999">
           <?php  
