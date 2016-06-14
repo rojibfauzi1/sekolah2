@@ -58,7 +58,7 @@ include '../sekolah/proses_login.php'; ?>
     </div>
     <div id="loginpanel">
       <ul>
-        <li class="left"style="float:left"><?php if($_SESSION['username'] || $_SESSION['nama_guru']){
+        <li class="left"style="float:left"><?php if($_SESSION['username'] || $_SESSION['nama_guru'] || $_SESSION['nama_siswa']){
   echo "<a href='../sekolah/admin/logout.php' style='padding-right:20px;float:left'>Logout</a>";
   }else{
     echo "Login >>";
