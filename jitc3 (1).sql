@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 04, 2016 at 06:42 AM
+-- Generation Time: Jun 15, 2016 at 04:58 PM
 -- Server version: 10.1.10-MariaDB
 -- PHP Version: 5.5.33
 
@@ -118,7 +118,8 @@ CREATE TABLE `gurumapel` (
 --
 
 INSERT INTO `gurumapel` (`kd_gurumapel`, `kd_guru`, `kd_mapel`, `keterangan`, `kd_tahun`, `kd_kelas`) VALUES
-('L002', 'G001', 'M001', 'juoss', 'T002', 'K001');
+('L002', 'G001', 'M001', 'juoss', 'T002', 'K001'),
+('L003', 'G002', 'M001', 'kereen', 'T002', 'K001');
 
 -- --------------------------------------------------------
 
@@ -196,7 +197,9 @@ CREATE TABLE `kelas` (
 
 INSERT INTO `kelas` (`kd_kelas`, `nama_kelas`, `tingkat`, `kd_jurusan`) VALUES
 ('K001', 'IPS', '3', 'J001'),
-('K002', 'IPA 2', '3', 'J002');
+('K002', 'IPA 2', '3', 'J002'),
+('K003', 'Bahasa 2', '2', 'J002'),
+('K004', 'Bahasa 451111', '3', 'J001');
 
 -- --------------------------------------------------------
 
@@ -237,7 +240,9 @@ CREATE TABLE `nilai` (
 --
 
 INSERT INTO `nilai` (`kd_nilai`, `kd_siswa`, `kd_kategorinilai`, `kd_gurumapel`, `semester`, `nilai`) VALUES
-('1', 'S001', 'K001', 'L002', 'ganjil', 34);
+('', 'S002', 'K001', 'L002', 'ganjil', 21),
+('1', 'S001', 'K001', 'L002', 'genap', 89),
+('N004', 'S002', 'K001', 'L003', 'ganjil', 76);
 
 -- --------------------------------------------------------
 

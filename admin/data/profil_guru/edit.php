@@ -20,12 +20,11 @@ if(isset($_POST['edit'])){
   $password = $_POST['password'];
 
 
-  $fotonama = str_replace(' ', '-', $nip.'.jpg');
-  $filefoto = move_uploaded_file($_FILES['gambar']['tmp_name'], '../upload/guru/'.$fotonama);
+
 
 $s = "UPDATE guru SET kd_guru='$id',nip='$nip',nama_guru='$nama',
   jenis_kelamin='$jk',tempat_lahir='$tempat',tanggal_lahir='$tanggal',alamat='$alamat',
-  no_telepon='$telp',foto='$fotonama',agama='$agama',pendidikan='$pendidikan',status_aktif='$status_aktif',
+  no_telepon='$telp',agama='$agama',pendidikan='$pendidikan',status_aktif='$status_aktif',
   status='$status',password='$password',foto='$fotonama'";
   $s .= " WHERE kd_guru='$id'";
  /* print_r($s);
@@ -82,8 +81,7 @@ $s = "UPDATE guru SET kd_guru='$id',nip='$nip',nama_guru='$nama',
     <input type="text" pattern="08[0-9]{8,11}" required name="telp" class="form-control" placeholder="No Telepon" value="<?php echo $row['no_telepon'] ?>">
   </div>
     <div class="form-group">
-    <label for="foto1">Foto</label>
-    <input type="file" required name="gambar" accept="image/jpeg">
+  
     <br/> 
     <img src="../upload/guru/<?php echo $row['foto'] ?>" width="100px" ><br/><br/> 
   </div></br/></br/>
