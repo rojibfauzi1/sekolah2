@@ -16,7 +16,7 @@
         $s = $conn->query($sql);
         while($row=$s->fetch_assoc()){
         ?>
-            <li><a href="profil.php?id=<?php echo $row['kd_profil'] ?>"><?php echo $row['profil'] ?></a></li>
+            <li><a href="../profil.php?id=<?php echo $row['kd_profil'] ?>"><?php echo $row['profil'] ?></a></li>
         <?php } ?>
           </ul>
          </li>

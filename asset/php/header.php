@@ -16,7 +16,7 @@
         $s = $conn->query($sql);
         while($row=$s->fetch_assoc()){
         ?>
-            <li><a href="profil.php?id=<?php echo $row['kd_profil'] ?>"><?php echo $row['profil'] ?></a></li>
+            <li><a href="../sekolah2/profil.php?id=<?php echo $row['kd_profil'] ?>"><?php echo $row['profil'] ?></a></li>
         <?php } ?>
           </ul>
          </li>
@@ -24,8 +24,8 @@
         
           <li><a class="drop" href="pages/full-width.html">Direktori</a>
             <ul style="z-index:9999">
-              <li><a href="../sekolah/d_guru.php">Guru</a></li>
-              <li><a href="../sekolah/d_siswa.php">Siswa</a></li>
+              <li><a href="../sekolah2/d_guru.php">Guru</a></li>
+              <li><a href="../sekolah2/d_siswa.php">Siswa</a></li>
             </ul>
           </li>
         
