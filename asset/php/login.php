@@ -59,13 +59,13 @@ include '../sekolah2/proses_login.php'; ?>
     <div id="loginpanel">
       <ul>
         <li class="left"style="float:left"><?php if($_SESSION['username'] || $_SESSION['nama_guru'] || $_SESSION['nama_siswa']){
-  echo "<a href='../sekolah/admin/logout.php' style='padding-right:20px;float:left'>Logout</a>";
+  echo "<a href='../sekolah2/admin/logout.php' style='padding-right:20px;float:left'>Logout</a>";
   }else{
     echo "Login >>";
     } ?></li>
         <li class="right" id="toggle" style="float:right"><a id="slideit" href="#slidepanel">
 <?php if($_SESSION['username']){
-  echo "<a href='../sekolah/admin/index.php' style='float:right'>$_SESSION[username]</a>";
+  echo "<a href='../sekolah2/admin/index.php' style='float:right'>$_SESSION[username]</a>";
   }elseif ($_SESSION['nama_guru']) {
     echo "<a href='?p=dasboard_guru' style='float:right'>$_SESSION[nama_guru]</a>";
   }elseif ($_SESSION['nama_siswa']) {
