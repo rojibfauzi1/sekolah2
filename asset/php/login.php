@@ -1,7 +1,7 @@
 <?php 
 error_reporting(0);
 session_start();
-include '../sekolah/proses_login.php'; ?>
+include '../sekolah2/proses_login.php'; ?>
 <div class="wrapper col0">
   <div id="topbar">
     <div id="slidepanel">
