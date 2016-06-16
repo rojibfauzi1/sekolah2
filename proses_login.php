@@ -73,7 +73,7 @@ $cek3 = $sql3->num_rows;
       $cek4 = $sql4->num_rows;
       /*print_r($cek4);
       die();*/
-      if($cek4){
+/*      if($cek4){
     $row = $sql4->fetch_assoc();
     
     if($sql4 > 0){
@@ -90,7 +90,7 @@ $cek3 = $sql3->num_rows;
       $_SESSION['no_telepon'] = $row['no_telepon'];
       $_SESSION['alamat'] = $row['alamat'];
       $_SESSION['agama'] = $row['agama'];
-      $_SESSION['pendidikan'] = $row['pendidikan'];
+      $_SESSION['pendidikan'] = $row['pendidikan'];*/
 /*
         if($sql3 > 0){
       $_SESSION['login'] = 4;
