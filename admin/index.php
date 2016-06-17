@@ -110,9 +110,9 @@ if($login != '1'){
         </li>
         
        
-        <li class="header">LABELS</li>
+<!--         <li class="header">LABELS</li>
         
-        <li><a href="logout.php"><i class="fa fa-circle-o text-yellow"></i> <span>Logout</span></a></li>
+        <li><a href="logout.php"><i class="fa fa-circle-o text-yellow"></i> <span>Logout</span></a></li> -->
        
       </ul>
     </section>
