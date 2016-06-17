@@ -90,8 +90,6 @@ $cek3 = $sql3->num_rows;
       $_SESSION['agama'] = $row['agama'];
       $_SESSION['pendidikan'] = $row['pendidikan'];
 
-/*print_r($s4);
-die();*/
       header("location: admin/wali.php?p=dasboard_wali"); 
       }
 
