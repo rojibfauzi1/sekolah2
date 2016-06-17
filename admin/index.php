@@ -36,7 +36,7 @@ if($login != '1'){
         </div>
       </div>
       <!-- search form -->
-      <form action="#" method="get" class="sidebar-form">
+     <!--  <form action="#" method="get" class="sidebar-form">
         <div class="input-group">
           <input type="text" name="q" class="form-control" placeholder="Search...">
               <span class="input-group-btn">
@@ -44,7 +44,7 @@ if($login != '1'){
                 </button>
               </span>
         </div>
-      </form>
+      </form> -->
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
@@ -316,7 +316,7 @@ if($login != '1'){
   <!-- /.content-wrapper -->
 <?php include 'asset/custom/php/footer2.php'; ?>
 
-<?php include 'data/sidebar_right.php'; ?>
+<?php /*include 'data/sidebar_right.php';*/ ?>
   <!-- /.control-sidebar -->
   <!-- Add the sidebar's background. This div must be placed
        immediately after the control sidebar -->
