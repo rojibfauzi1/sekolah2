@@ -78,16 +78,18 @@ include '../conf/koneksi.php';
 </form>
 <div class="clear" style="clear:both;"></div>
 <br/><br/>
+<a href="data/laporan_nilai/cetak.php" class="btn btn-primary">Cetak</a>
+<br/><br/>
 <table class="table table-striped">
 	<thead>
     
   <tr>
 	  <th>No</th>
-	  <th>Jurusan</th>
-	  <th>Kelas</th>
-	  <th>Nama Siswa</th>
- 
-	 
+	  <th>Nama</th>
+	  <th>Mata Pelajaran</th>
+	  <th>Semester</th>
+    <th>Jenis Nilai</th>
+	  <th>Nilai</th>
 	</tr>
   </thead>
   <tbody>
@@ -99,7 +101,7 @@ include '../conf/koneksi.php';
   			join gurumapel on nilai.kd_gurumapel=gurumapel.kd_gurumapel
   			join mapel on gurumapel.kd_mapel=mapel.kd_mapel
 
-  			join kategorinilai on nilai.kd_kategorinilai=kategorinilai.kd_kategorinilai WHERE siswa.kd_siswa='".$kd_siswa."'";
+  			join kategorinilai on nilai.kd_kategorinilai=kategorinilai.kd_kategorinilai ";
 	$s = $conn->query($sql);
 	while($row=$s->fetch_assoc()){
 	?>

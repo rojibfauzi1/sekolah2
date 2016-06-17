@@ -303,7 +303,7 @@ if($login != '3'){
   </div>
 </div>
 <!-- ####################################################################################################### -->
-<div class="wrapper col4">
+<!-- <div class="wrapper col4">
   <div id="footer">
     <div class="footbox">
       <h2>Lacus interdum</h2>
@@ -362,10 +362,10 @@ if($login != '3'){
     </div>
     <br class="clear" />
   </div>
-</div>
+</div> -->
 <!-- ####################################################################################################### -->
 <div class="wrapper col5">
-  <div id="copyright">
+  <div id="copyright" style="margin-top:100px;">
     <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="#">Domain Name</a></p>
     <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
     <br class="clear" />

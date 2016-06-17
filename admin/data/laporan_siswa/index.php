@@ -78,6 +78,8 @@ include '../conf/koneksi.php';
 </form>
 <div class="clear" style="clear:both;"></div>
 <br/><br/>
+<a href="data/laporan_siswa/cetak.php" class="btn btn-primary">Cetak</a>
+<br/><br/>
 <table class="table table-striped">
   <thead>
     
@@ -98,7 +100,7 @@ include '../conf/koneksi.php';
         join siswakelas on siswa.kd_siswa=siswakelas.kd_siswa
         join wali on siswakelas.kd_wali=wali.kd_wali
         join tahun on wali.kd_tahun=tahun.kd_tahun
-
+        join kelas on wali.kd_kelas=kelas.kd_kelas
         join jurusan on siswa.kd_jurusan=jurusan.kd_jurusan";
   $s = $conn->query($sql);
   while($row=$s->fetch_assoc()){

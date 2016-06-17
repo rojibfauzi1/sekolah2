@@ -74,7 +74,7 @@ if($login != '4'){
 <div class="wrapper col3">
   <div id="homecontent">
   <div class="fl_left">
-      <h2>Halaman Admin</h2>
+      <h2>Halaman Wali</h2>
       <ul class="nav nav-stacked">
         <li><a href="?p=dasboard_guru">Dashboard</a></li>
         <li><a href="?p=profil_guru">Profil</a></li>
@@ -311,7 +311,7 @@ if($login != '4'){
   </div>
 </div>
 <!-- ####################################################################################################### -->
-<div class="wrapper col4">
+<!-- <div class="wrapper col4">
   <div id="footer">
     <div class="footbox">
       <h2>Lacus interdum</h2>
@@ -370,10 +370,10 @@ if($login != '4'){
     </div>
     <br class="clear" />
   </div>
-</div>
+</div> -->
 <!-- ####################################################################################################### -->
 <div class="wrapper col5">
-  <div id="copyright">
+  <div id="copyright" style="margin-top:100px;">
     <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="#">Domain Name</a></p>
     <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
     <br class="clear" />

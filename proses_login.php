@@ -7,7 +7,8 @@ if(!empty($_POST['login'])){
   
 
   $s1 = "SELECT * FROM admin WHERE username='$user' and password='$pass1'";
-  $sql1 = $conn->query($s1);
+  $sql1 = $conn->
+query($s1);
   
  $nip = $_POST['username'];
   $pass2 = $_POST['password'];
@@ -63,17 +64,14 @@ $cek3 = $sql3->num_rows;
       $_SESSION['alamat'] = $row['alamat'];
       $_SESSION['agama'] = $row['agama'];
       $_SESSION['pendidikan'] = $row['pendidikan'];
-
-      if($cek2 > 0){
+}
+      
 
       $s4 = "SELECT * FROM wali 
       join guru on wali.kd_guru=guru.kd_guru WHERE guru.kd_guru='".$row['kd_guru']."'";
-
       $sql4 = $conn->query($s4);
       $cek4 = $sql4->num_rows;
-      /*print_r($cek4);
-      die();*/
-/*      if($cek4){
+        if($cek4){
     $row = $sql4->fetch_assoc();
     
     if($sql4 > 0){
@@ -90,30 +88,19 @@ $cek3 = $sql3->num_rows;
       $_SESSION['no_telepon'] = $row['no_telepon'];
       $_SESSION['alamat'] = $row['alamat'];
       $_SESSION['agama'] = $row['agama'];
-      $_SESSION['pendidikan'] = $row['pendidikan'];*/
-/*
-        if($sql3 > 0){
-      $_SESSION['login'] = 4;
-      $_SESSION['nip'] = $nip;
-      $_SESSION['password'] = $pass2;
-      $_SESSION['nama_guru'] = $row['nama_guru'];
-      $_SESSION['kd_guru'] = $row['kd_guru'];
-      $_SESSION['gambar'] = $row['foto'];
-      $_SESSION['jenis_kelamin'] = $row['jenis_kelamin'];
-      $_SESSION['tempat_lahir'] = $row['tempat_lahir'];
-      $_SESSION['tanggal_lahir'] = $row['tanggal_lahir'];
-      $_SESSION['alamat'] = $row['alamat'];
-      $_SESSION['no_telepon'] = $row['no_telepon'];
-      $_SESSION['alamat'] = $row['alamat'];
-      $_SESSION['agama'] = $row['agama'];
-      $_SESSION['pendidikan'] = $row['pendidikan'];*//*}*/
-      header("Refresh: 0; URL=admin/wali.php?p=dasboard_wali"); /*}*/
+      $_SESSION['pendidikan'] = $row['pendidikan'];
+
+/*print_r($s4);
+die();*/
+      header("location: admin/wali.php?p=dasboard_wali"); 
       }
 
-        header("Refresh: 0; URL=admin/guru.php?p=dasboard_guru");
+        
        
    
-    }
+      }
+     
+    header("Refresh: 0; URL=admin/guru.php?p=dasboard_guru");
   }elseif($cek3){
     $row = $sql3->fetch_assoc();
     if($sql3 > 0){
@@ -137,7 +124,9 @@ $cek3 = $sql3->num_rows;
    
     }
   }else{
-      echo "<script>window.alert('gagal login username / password salah')</script>";
+      echo "
+<script>window.alert('gagal login username / password salah')</script>
+";
     }
 }
 ?>
